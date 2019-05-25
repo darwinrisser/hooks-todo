@@ -10,7 +10,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
 
       <div>
         <button onClick={() => completeTodo(index)}>Complete</button>
-        <button onClick={() => removeTodo(index)}>x</button>
+        <button style={{backgroundColor: "red"}} onClick={() => removeTodo(index)}>x</button>
 
       </div>
     </div>
