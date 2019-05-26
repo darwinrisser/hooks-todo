@@ -20,6 +20,12 @@ function Main(){
     newList(addedList);
   };
 
+  const removeList = index => {
+    const newItems = [...list];
+    newItems.splice(index, 1);
+    newList(newItems);
+  };
+
   return(
     <div className="full">
       <button onClick={addList}>New List</button>
@@ -27,7 +33,7 @@ function Main(){
        {list.map((list, index) => (
           <App
             key={index}
-            index={index}
+            removeList={removeList}
           />
         ))}
       </div>

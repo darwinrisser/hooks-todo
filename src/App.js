@@ -3,7 +3,7 @@ import Todo from './Todo'
 import TodoForm from './TodoForm'
 import './App.css';
 
-function App() {
+function App(removeList, index) {
   const [todos, setTodos] = useState([
     {
       text: "Learn about React",
@@ -49,6 +49,7 @@ function App() {
           />
         ))}
         <TodoForm addTodo={addTodo} />
+        <button onClick={() => removeList(index)}>Remove</button>
       </div>
     </div>
   );
