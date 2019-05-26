@@ -32,6 +32,7 @@ function Main(){
       <div className="main">
        {list.map((list, index) => (
           <App
+            index={index}
             key={index}
             removeList={removeList}
           />

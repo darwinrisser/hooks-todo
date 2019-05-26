@@ -1,9 +1,9 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Todo from './Todo'
 import TodoForm from './TodoForm'
 import './App.css';
 
-function App(removeList, index) {
+function App({removeList, index}) {
   const [todos, setTodos] = useState([
     {
       text: "Learn about React",
